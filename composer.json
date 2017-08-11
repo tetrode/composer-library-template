@@ -1,5 +1,5 @@
 {
-    "name": "buonzz/composer-library-template",
+    "name": "tetrode/composer-library-template",
     "description": "Boilerplate package for creating other packages.",
     "keywords": ["template", "composer", "package"],
     "license": "DBAD",
@@ -14,7 +14,6 @@
 		"php": ">=5.4"
     },
 	"require-dev": {
-		"phpunit/phpunit": "5.2.*"
     },
 	"autoload": {
         "psr-4": {
