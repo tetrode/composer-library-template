@@ -3,7 +3,6 @@
     "description": "Boilerplate package for creating other packages.",
     "keywords": ["template", "composer", "package"],
     "license": "DBAD",
-    "version": "1.0.1",
     "authors": [
         {
             "name": "Darwin Biler",
@@ -15,7 +14,6 @@
 		"php": ">=5.4"
     },
 	"require-dev": {
-		"php": ">=5.4"
     },
 	"autoload": {
         "psr-4": {
