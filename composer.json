@@ -1,21 +1,30 @@
 {
     "name": "tetrode/composer-library-template",
     "description": "Boilerplate package for creating other packages.",
-    "keywords": ["template", "composer", "package"],
+    "keywords": [
+        "template",
+        "composer",
+        "package"
+    ],
+    "version": "1.0.3",
     "license": "DBAD",
     "authors": [
         {
             "name": "Darwin Biler",
             "email": "buonzz@gmail.com"
+        },
+        {
+            "name": "Mark Tetrode",
+            "email": "mark.tetrode@gmail.com"
         }
     ],
     "type": "project",
     "require": {
-		"php": ">=5.4"
+        "php": ">=5.4"
     },
-	"require-dev": {
+    "require-dev": {
     },
-	"autoload": {
+    "autoload": {
         "psr-4": {
             "Buonzz\\Template\\": "src/"
         }
