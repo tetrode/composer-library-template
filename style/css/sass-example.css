@@ -1,0 +1,41 @@
+/*
+Error: Invalid CSS after "...ica, sans-serif": expected expression (e.g. 1px, bold), was ";"
+        on line 1 of /opt/development/examples/composer-library-template/style/sass/sass-example.sass
+
+1: $font-stack:    Helvetica, sans-serif;
+2: $primary-color: #333;
+3: 
+4: body
+5: font: $font-stack;
+6: color: $primary-color;
+
+Backtrace:
+/opt/development/examples/composer-library-template/style/sass/sass-example.sass:1
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/script/lexer.rb:231:in `expected!'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/script/parser.rb:761:in `assert_done'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/script/parser.rb:69:in `parse'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/script/parser.rb:228:in `parse'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/script.rb:27:in `parse'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:1177:in `parse_script'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:783:in `parse_variable'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:651:in `parse_line'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:540:in `build_tree'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:559:in `block in append_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:558:in `each'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:558:in `append_children'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:417:in `_to_tree'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:391:in `run'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
+/var/lib/gems/2.3.0/gems/sass-3.5.1/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ica, sans-serif\": expected expression (e.g. 1px, bold), was \";\"\A         on line 1 of /opt/development/examples/composer-library-template/style/sass/sass-example.sass\A \A 1: $font-stack:    Helvetica, sans-serif;\A 2: $primary-color: #333;\A 3: \A 4: body\A 5: font: $font-stack;\A 6: color: $primary-color;"; }
