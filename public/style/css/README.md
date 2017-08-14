@@ -1,5 +1,6 @@
 css folder
 ===
+Folder: /public/style/css
 
 The css folder can contain
     - css files

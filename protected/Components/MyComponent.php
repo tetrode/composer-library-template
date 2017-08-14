@@ -14,12 +14,22 @@
 namespace Smartcall\Components;
 
 /**
- * Description of MyComponent
+ * A sample component class
+ *
+ * Use this section to define what this class is doing, the PHPDocumentator will use this
+ * to automatically generate an API documentation using this information.
+ *
+ * Classes in the /protected/Components folder orchestrate MVC architecture calls
  *
  * @author mark
  */
-class MyComponent {
+class MyComponent extends AbstractMyComponent implements MyComponentInterface {
 
+    use MyComponentTrait;
+
+    /**
+     *
+     */
     public function run() {
         $model = new \Smartcall\Models\MyModel();
         $controller = new \Smartcall\Controllers\MyController($model);
@@ -28,9 +38,14 @@ class MyComponent {
         if (isset($_GET['action']) && !empty($_GET['action'])) {
             $controller->{$_GET['action']}();
         }
-//        echo "x";
 
-        echo $view->output();
-//        echo "y";
+        echo $this->style(
+                $view->output() . " " . $this->sum(40, 2)
+        );
+    }
+
+    // Must define this...
+    public function comment() {
+
     }
 }

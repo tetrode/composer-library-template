@@ -1,5 +1,10 @@
 Controllers folder
 ===
 
+folder: /protected/Controllers
+
 Contains the controller part from the MVC architecture.
-The controller handles the data that the user submits and update the model accordingly.
+The user submits data and uses the controller.
+The controller manipulates (CRUD) the model.
+
+You can create subfolders to structure your Controllers.

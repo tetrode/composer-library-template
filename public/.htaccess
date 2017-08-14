@@ -9,8 +9,3 @@
 RewriteEngine On
 # rewrite all to index with rest of the URL as parameter.
 RewriteRule (.+) index.php?$1 [QSA,L]
-
-# ignore these files
-<FilesMatch .gitignore|.hgignore|composer\.json|composer.lock>
-    Require all denied
-</FilesMatch>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>README</title>
+<style type="text/css">
+/* Partial copy of bootstrap - thanks! */
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    margin: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+a {
+    color: #0088cc;
+    text-decoration: none;
+}
+a:hover {
+    color: #005580;
+    text-decoration: underline;
+}
+
+p {
+    margin: 0 0 9px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: inherit;
+    font-weight: bold;
+    color: inherit;
+    text-rendering: optimizelegibility;
+}
+h1 {
+    font-size: 30px;
+    line-height: 36px;
+}
+h2 {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+h4,
+h5,
+h6 {
+    line-height: 18px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+h6 {
+    font-size: 11px;
+    color: #999999;
+    text-transform: uppercase;
+}
+ul,
+ol {
+    padding: 0;
+    margin: 0 0 9px 25px;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+li {
+    line-height: 18px;
+}
+
+dl {
+    margin-bottom: 18px;
+}
+
+dt,
+dd {
+    line-height: 18px;
+}
+
+dt {
+    font-weight: bold;
+    line-height: 17px;
+}
+
+dd {
+    margin-left: 9px;
+}
+
+hr {
+    margin: 18px 0;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #ffffff;
+}
+blockquote {
+    padding: 0 0 0 15px;
+    margin: 0 0 18px;
+    border-left: 5px solid #eeeeee;
+}
+
+blockquote p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22.5px;
+}
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+code,
+pre {
+    padding: 0 3px 2px;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 12px;
+    color: #333333;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+code {
+    padding: 2px 4px;
+    color: #d14;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+}
+
+pre {
+    display: block;
+    padding: 8.5px;
+    margin: 0 0 9px;
+    font-size: 12.025px;
+    line-height: 18px;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    line-height: 18px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+}
+
+.table th {
+    font-weight: bold;
+}
+
+.table thead th {
+    vertical-align: bottom;
+}
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+    border-top: 0;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dddddd;
+}
+
+</style>
+</head>
+<body>
+<h1><a href="#composer-library-template" name="composer-library-template">Composer Library Template</a></h1><p>If you are trying to create a new PHP Composer library, whether it will be going to submitted to packagist.org or just in your Github account, this template of files will surely help you make the process a lot easier and faster.</p><h2><a href="#create-the-project-folder-structure" name="create-the-project-folder-structure">Create the project folder structure</a></h2><p>Execute the following in your console (you need to have Composer installed first of course). The mylibrary in the command is the name of your library, so replace it with the actual name.</p>
+<pre><code>composer create-project tetrode/composer-library-template mylibrary
+</code></pre><p>what is happening?</p><p>Not much, it just creates a new library under mylibrary folder. Let us take a look at the generated files.</p><h2><a href="#features" name="features">Features</a></h2>
+<ul>
+  <li>PSR-4 autoloading compliant structure</li>
+  <li>Unit-Testing with PHPUnit</li>
+  <li>Comprehensive Guides and tutorial</li>
+  <li>Easy to use to any framework or even a plain php file</li>
+</ul><p>I encourage that you put more information on this readme file instead of leaving it as is. See <a href="http://www.darwinbiler.com/designing-and-making-the-readme-file-for-your-github-repository/">How to make a README file</a> for more info.</p><p>Potential libraries to use - how to specify versions: https://getcomposer.org/doc/articles/versions.md</p>
+<pre><code>    &quot;silex/silex&quot;: &quot;^2.0&quot;,                              The PHP micro-framework based on the Symfony Components
+    &quot;twig/twig&quot;: &quot;^1.34&quot;,                               Twig, the flexible, fast, and secure template language for PHP - v2 is only PHP 7
+    &quot;jasny/twig-extensions&quot;: &quot;^1.0&quot;,                    A set of useful Twig filters
+    &quot;symfony/twig-bridge&quot;: &quot;^3.3&quot;,                      Symfony Twig Bridge
+    &quot;components/jquery&quot;: &quot;^3.2&quot;,                        jQuery JavaScript Library
+    &quot;apache/log4php&quot;: &quot;^2.3&quot;,                           A versatile logging framework for PHP
+    &quot;monolog/monolog&quot;: &quot;1.23.0&quot;                         Sends your logs to files, sockets, inboxes, databases and various web services
+    &quot;giggsey/libphonenumber-for-php&quot;: &quot;8.7.1&quot;,          PHP Port of Google&#39;s libphonenumber
+    &quot;guzzlehttp/guzzle&quot;: &quot;^6.3&quot;,                        Guzzle is a PHP HTTP client library
+    &quot;beberlei/assert&quot;: &quot;^2.7.6&quot;,                        Thin assertion library for input validation in business models.
+    &quot;matthiasmullie/minify&quot;: &quot;^1.3&quot;,                    CSS &amp; JS minifier
+    &quot;twilio/sdk&quot;: &quot;^5.4&quot;,                               A PHP wrapper for Twilio&#39;s API
+    &quot;wsdl2phpgenerator/wsdl2phpgenerator&quot;: &quot;^3.4&quot;,      Simple class library for generating php classes from a wsdl file.
+    &quot;vlucas/valitron&quot;: &quot;^1.4&quot;,                          Simple, elegant, stand-alone validation library with NO dependencies
+    &quot;pusher/pusher-php-server&quot;: &quot;^3.0&quot;,                 Library for interacting with the Pusher REST API
+    &quot;arcturial/clickatell&quot;: &quot;^3.0&quot;,
+    &quot;gabordemooij/redbean&quot;:&quot;^4.3&quot;                       RedBeanPHP ORM - soon 5.0
+
+
+    &quot;ajaxray/short-code&quot;: &quot;^1.1&quot;
+    &quot;arcturial/clickatell&quot;: &quot;^3.0&quot;
+
+    &quot;behat/behat&quot;: &quot;3.3.1&quot;,                              Scenario-oriented BDD framework for PHP 5.3
+
+    ???
+    &quot;bower-asset/bootstrap&quot;: &quot;3.3.* | 3.2.* | 3.1.*&quot;
+    &quot;bower-asset/jquery&quot;: &quot;2.1.*@stable | 1.11.*@stable&quot;,
+    &quot;bower-asset/jquery.inputmask&quot;: &quot;3.1.*&quot;,
+    &quot;bower-asset/punycode&quot;: &quot;1.3.*&quot;,
+    &quot;bower-asset/typeahead.js&quot;: &quot;0.10.*&quot;
+    &quot;bower-asset/yii2-pjax&quot;: &quot;&gt;=2.0.1&quot;
+
+    &quot;bshaffer/oauth2-server-php&quot;: &quot;^1.9&quot;,               OAuth2 Server for PHP
+
+    &quot;cboden/ratchet&quot;: &quot;v0.3.6&quot;,                         PHP Websocket server
+
+    &quot;cebe/markdown&quot;: &quot;~1.1.2&quot;,                          A super fast, highly extensible markdown parser for PHP
+    &quot;erusev/parsedown&quot;: &quot;^1.6&quot;                          Markdown parsing.
+
+    &quot;christian-riesen/base32&quot;: &quot;^1.1&quot;,
+
+    &quot;cilex/cilex&quot;: &quot;2.0&quot;,                               The PHP micro-framework for Command line tools based on the Symfony2 Components
+
+    &quot;twbs/bootstrap&quot;: &quot;^3.3&quot;,                           The most popular front-end framework for developing responsive, mobile first projects on the web.
+    &quot;components/bootstrap&quot;: &quot;*&quot;                         same
+    &quot;components/bootstrap-default&quot;: &quot;3.3.5&quot;,            Shim repository for the default theme for Bootstrap.
+    &quot;components/font-awesome&quot;: &quot;4.5.0&quot;                  The iconic font designed for use with Twitter Bootstrap
+    &quot;components/jquery-cookie&quot;: &quot;1.4.1.2&quot;,              A simple, lightweight jQuery plugin for reading, writing and deleting cookies
+
+    &quot;composer-plugin-api&quot;: &quot;^1.0&quot;                       See: https://getcomposer.org/doc/articles/plugins.md
+
+    &quot;container-interop/container-interop&quot;: &quot;^1.1&quot;       Became PSR-11
+
+    &quot;crisu83/yiistrap&quot;: &quot;dev-bs3&quot;
+
+    &quot;doctrine/annotations&quot;: &quot;1.*&quot;                       Doctrine ORM
+    &quot;doctrine/cache&quot;: &quot;1.*&quot;,
+    &quot;doctrine/collections&quot;: &quot;1.*&quot;,
+    &quot;doctrine/common&quot;: &quot;&gt;=2.5-dev,&lt;2.8-dev&quot;,
+    &quot;doctrine/data-fixtures&quot;: &quot;~1.0&quot;
+    &quot;doctrine/dbal&quot;: &quot;&gt;=2.5-dev,&lt;2.6-dev&quot;,
+    &quot;doctrine/doctrine-bundle&quot;: &quot;^1.6&quot;,
+    &quot;doctrine/doctrine-cache-bundle&quot;: &quot;^1.2&quot;,
+    &quot;doctrine/doctrine-fixtures-bundle&quot;: &quot;^2.2&quot;,
+    &quot;doctrine/inflector&quot;:&quot;~1.0&quot;,
+    &quot;doctrine/instantiator&quot;: &quot;^1.0.3&quot;
+    &quot;doctrine/lexer&quot;: &quot;1.*&quot;,
+    &quot;doctrine/orm&quot;: &quot;^2.5&quot;,
+
+    &quot;dulyanov/log4php-graylog2&quot;: &quot;~1.0&quot;
+    &quot;dulyanov/log4php-graylog2&quot;: &quot;~1.0&quot;,
+
+    &quot;eric-chau/bijective&quot;: &quot;dev-master&quot;                 Simple bijective function (base(n) encode/decode) for PHP.
+
+    &quot;evenement/evenement&quot;: &quot;~2.0&quot;,                      Événement is a very simple event dispatching library for PHP 7
+
+    &quot;ext-bcmath&quot;: &quot;*&quot;,                                  PHP extensions
+    &quot;ext-curl&quot;: &quot;*&quot;,
+    &quot;ext-dom&quot;: &quot;*&quot;,
+    &quot;ext-hash&quot;: &quot;*&quot;,
+    &quot;ext-json&quot;: &quot;*&quot;,
+    &quot;ext-ldap&quot;: &quot;*&quot;
+    &quot;ext-libxml&quot;: &quot;*&quot;,
+    &quot;ext-mbstring&quot;: &quot;*&quot;
+    &quot;ext-openssl&quot;: &quot;*&quot;,
+    &quot;ext-pcre&quot;: &quot;*&quot;,
+    &quot;ext-pdo&quot;: &quot;*&quot;,
+    &quot;ext-pdo_sqlite&quot;: &quot;*&quot;,
+    &quot;ext-reflection&quot;: &quot;*&quot;,
+    &quot;ext-simplexml&quot;: &quot;*&quot;
+    &quot;ext-soap&quot;: &quot;*&quot;,
+    &quot;ext-sockets&quot;: &quot;*&quot;
+    &quot;ext-spl&quot;: &quot;*&quot;
+    &quot;ext-tokenizer&quot;: &quot;*&quot;,
+    &quot;ext-xmlwriter&quot;: &quot;*&quot;,
+    &quot;ext-zmq&quot;: &quot;*&quot;,
+
+    &quot;fabiang/xmpp&quot;: &quot;*&quot;,                                    Library for XMPP protocol (Jabber) connections
+
+    &quot;friendsofphp/php-cs-fixer&quot;: &quot;^1.11&quot;,
+    &quot;friendsofsymfony/rest-bundle&quot;: &quot;^2.1&quot;,
+    &quot;fxp/composer-asset-plugin&quot;: &quot;~1.0.0&quot;
+
+    &quot;fzaninotto/faker&quot;: &quot;*&quot;
+
+    &quot;generate-structure&quot;: true,
+
+    &quot;Gidkom\\OpenFireRestApi&quot;: &quot;src/&quot;
+    &quot;gidkom/php-openfire-restapi&quot;: &quot;dev-master&quot;
+
+    &quot;giggsey/libphonenumber-for-php&quot;: &quot;7.2.5&quot;,
+
+    &quot;goaop/framework&quot;: &quot;~1.0|~2.0@dev&quot;,
+    &quot;goaop/parser-reflection&quot;: &quot;^1.0&quot;
+
+    &quot;guzzle/common&quot;: &quot;self.version&quot;,
+    &quot;guzzlehttp/guzzle&quot;: &quot;6.2.0&quot;,
+    &quot;guzzlehttp/promises&quot;: &quot;~1.0&quot;
+    &quot;guzzlehttp/psr7&quot;: &quot;^1.4&quot;,
+    &quot;guzzlehttp/ringphp&quot;: &quot;^1.1&quot;
+    &quot;guzzlehttp/streams&quot;: &quot;~3.0&quot;,
+    &quot;guzzle/parser&quot;: &quot;self.version&quot;,
+    &quot;guzzle/stream&quot;: &quot;self.version&quot;
+
+    &quot;herrera-io/json&quot;: &quot;1.*&quot;,
+    &quot;herrera-io/phar-update&quot;: &quot;~1.0&quot;,
+    &quot;herrera-io/phar-update&quot;: &quot;1.0.3&quot;,
+
+    &quot;incenteev/composer-parameter-handler&quot;: &quot;^2.0&quot;
+    &quot;ircmaxell/random-lib&quot;: &quot;~1.1&quot;,
+    &quot;ircmaxell/security-lib&quot;: &quot;^1.1&quot;,
+
+    &quot;j4mie/idiorm&quot;: &quot;1.5.*&quot;
+    &quot;j4mie/paris&quot;: &quot;*&quot;,
+    &quot;jakubledl/dissect&quot;: &quot;~1.0&quot;,
+    &quot;Jarvis\\Math\\&quot;: &quot;src/&quot;
+    &quot;jasny/twig-extensions&quot;: &quot;^1.0&quot;,
+    &quot;jaxl/jaxl&quot;: &quot;^3.1.0&quot;,
+    &quot;jdorn/sql-formatter&quot;: &quot;~1.1&quot;,
+    &quot;jms/metadata&quot;: &quot;~1.1&quot;,
+    &quot;jms/metadata&quot;: &quot;1.5.1&quot;,
+    &quot;jms/parser-lib&quot;: &quot;1.*&quot;,
+    &quot;jms/serializer&quot;: &quot;~0.12&quot;,
+    &quot;jms/serializer&quot;: &quot;0.16.0&quot;,
+    &quot;jms/serializer&quot;: &quot;^1.5&quot;,
+    &quot;jms/serializer-bundle&quot;: &quot;^1.2&quot;,
+    &quot;jquery&quot;
+    &quot;jquery-ui.js&quot;
+    &quot;jquery-ui.min.js&quot;
+    &quot;justinrainbow/json-schema&quot;: &quot;&gt;=1.0,&lt;2.0-dev&quot;,
+    &quot;kherge/version&quot;: &quot;1.*&quot;
+    &quot;kriswallsmith/assetic&quot;: &quot;~1.3&quot;
+    &quot;leafo/scssphp&quot;: &quot;^0.5&quot;,
+    &quot;league/oauth2-client&quot;: &quot;~1.0&quot;
+    &quot;league/oauth2-google&quot;: &quot;^1.0&quot;
+    &quot;lib-libxml&quot;: &quot;*&quot;
+    &quot;lib-pcre&quot;: &quot;*&quot;
+    &quot;linkorb/jsmin-php&quot;: &quot;1.0.0&quot;,
+    &quot;mailgun/mailgun-php&quot;: &quot;v1.8&quot;,
+    &quot;matthiasmullie/minify&quot;: &quot;^1.3&quot;,
+    &quot;matthiasmullie/path-converter&quot;: &quot;~1.1&quot;
+    &quot;meenie/javascript-packer&quot;: &quot;1.1&quot;,
+    &quot;michelf/php-markdown&quot; : &quot;^1.5&quot;,
+    &quot;minimum-stability&quot;: &quot;beta&quot;,
+    &quot;minimum-stability&quot;: &quot;dev&quot;
+    &quot;minimum-stability&quot;: &quot;stable&quot;
+    &quot;minishlink/web-push&quot;: &quot;^1.4&quot;
+    &quot;mnapoli/invoker&quot;: &quot;0.2.* &gt;=0.2.1&quot;
+    &quot;mnapoli/phpdocreader&quot;: &quot;~1.3&quot;,
+    &quot;mnapoli/silly&quot;: &quot;^1.1&quot;
+    &quot;moment/moment&quot;: &quot;2.11.2&quot;,
+    &quot;monolog/monolog&quot;: &quot;&gt;=1.6.0&quot;,
+    &quot;mustache/mustache&quot;: &quot;2.10.0&quot;,
+    &quot;myclabs/deep-copy&quot;: &quot;~1.3&quot;,
+    &quot;myclabs/php-enum&quot;: &quot;~1.1&quot;,
+    &quot;natxet/CssMin&quot;: &quot;^3.0&quot;,
+    &quot;nelmio/api-doc-bundle&quot;: &quot;^2.13&quot;
+    &quot;nelmio/cors-bundle&quot;: &quot;^1.5&quot;,
+    &quot;nikic/fast-route&quot;: &quot;^1.0&quot;,
+    &quot;nikic/php-parser&quot;: &quot;^1.2|^2.0&quot;
+    &quot;nochso/html-compress-twig&quot;: &quot;^1.0&quot;
+    &quot;ocramius/proxy-manager&quot;: &quot;~0.4|~1.0|~2.0&quot;
+    &quot;pagerfanta/pagerfanta&quot;: &quot;1.0.*&quot;
+    &quot;paragonie/constant_time_encoding&quot;: &quot;^1|^2&quot;,
+    &quot;paragonie/random_compat&quot;: &quot;^2.0.2&quot;
+    &quot;patchwork/jsqueeze&quot;: &quot;^2.0&quot;,
+    &quot;pdepend/pdepend&quot;: &quot;^2.0.4&quot;
+    &quot;phing/phing&quot;: &quot;^2.14&quot;,
+    &quot;php2wsdl/php2wsdl&quot;: &quot;^0.5.0&quot;
+
+    &quot;php-amqplib/php-amqplib&quot;: &quot;2.5.*&quot;
+    &quot;phpcollection/phpcollection&quot;: &quot;~0.1&quot;,
+
+    &quot;php-di/invoker&quot;: &quot;~1.2&quot;,
+    &quot;php-di/php-di&quot;: &quot;^5.3&quot;
+    &quot;php-di/phpdoc-reader&quot;: &quot;^2.0.1&quot;
+    &quot;phpdocumentor/fileset&quot;: &quot;~1.0&quot;,
+    &quot;phpdocumentor/graphviz&quot;:&quot;~1.0&quot;,
+    &quot;phpdocumentor/reflection&quot;:&quot;~1.0&quot;,
+    &quot;phpdocumentor/reflection-common&quot;: &quot;^1.0&quot;
+    &quot;phpdocumentor/reflection-docblock&quot;: &quot;^2.0|^3.0.2&quot;,
+    &quot;phpdocumentor/type-resolver&quot;: &quot;^0.3.0&quot;,
+    &quot;phploc/phploc&quot;: &quot;^3.0&quot;
+    &quot;phpmailer/phpmailer&quot;: &quot;^5.2&quot;,
+    &quot;phpmd/phpmd&quot;: &quot;^2.4&quot;,
+    &quot;phpoption/phpoption&quot;: &quot;^1.1.0&quot;,
+    &quot;phpseclib/phpseclib&quot;: &quot;^2.0&quot;
+    &quot;phpspec/php-diff&quot;: &quot;&gt;=1.0.2&quot;,
+    &quot;phpspec/prophecy&quot;: &quot;^1.3.1&quot;,
+    &quot;phpunit/php-code-coverage&quot;: &quot;^4.0&quot;,
+    &quot;phpunit/php-file-iterator&quot;: &quot;~1.4&quot;,
+    &quot;phpunit/php-text-template&quot;: &quot;^1.2&quot;,
+    &quot;phpunit/php-timer&quot;: &quot;&gt;=1.0.6&quot;,
+    &quot;phpunit/php-token-stream&quot;: &quot;^1.4.2&quot;,
+    &quot;phpunit/phpunit&quot;: &quot;^5.4&quot;,
+    &quot;phpunit/phpunit-mock-objects&quot;: &quot;^3.2&quot;,
+    &quot;pimple/pimple&quot;: &quot;^3.0&quot;,
+    &quot;piwik/ini&quot;: &quot;^1.0&quot;,
+    &quot;propel/propel&quot;: &quot;~2.0@dev&quot;
+    &quot;psr/cache&quot;: &quot;~1.0&quot;,
+    &quot;psr/http-message&quot;: &quot;~1.0&quot;
+    &quot;psr/log&quot;: &quot;~1.0&quot;
+    &quot;psr/log&quot;: &quot;dev-master&quot;,
+    &quot;Psr\\Log\\&quot;: &quot;Psr/Log/&quot;
+    &quot;pusher/pusher-php-server&quot;: &quot;^2.6&quot;,
+    &quot;react/cache&quot;: &quot;~0.4.0|~0.3.0&quot;,
+    &quot;react/dns&quot;: &quot;0.4.*&quot;,
+    &quot;react/event-loop&quot;: &quot;0.4.2&quot;,
+    &quot;react/http&quot;: &quot;0.2.*&quot;,
+    &quot;reactivex/rxphp&quot;: &quot;1.2.*&quot;,
+    &quot;react/promise&quot;: &quot;2.4.1&quot;
+    &quot;react/socket&quot;: &quot;~0.4.0&quot;,
+    &quot;react/socket&quot;: &quot;~0.4.0|~0.3.0&quot;,
+    &quot;react/socket-client&quot;: &quot;~0.4.0&quot;
+    &quot;react/stream&quot;: &quot;0.4.*&quot;,
+    &quot;react/zmq&quot;: &quot;v0.3.0&quot;
+    &quot;rmccue/requests&quot;: &quot;1.6.1&quot;
+    &quot;robloach/component-installer&quot;: &quot;*&quot;,
+    &quot;sebastian/code-unit-reverse-lookup&quot;: &quot;~1.0&quot;,
+    &quot;sebastian/comparator&quot;:&quot;^1.1|^2.0&quot;,
+    &quot;sebastian/diff&quot;: &quot;~1.2&quot;,
+    &quot;sebastian/environment&quot;: &quot;^1.3 || ^2.0&quot;,
+    &quot;sebastian/exporter&quot;: &quot;~1.2 || ~2.0&quot;
+    &quot;sebastian/finder-facade&quot;: &quot;~1.1&quot;,
+    &quot;sebastian/git&quot;: &quot;~2.1&quot;,
+    &quot;sebastian/global-state&quot;: &quot;~1.0&quot;,
+    &quot;sebastian/object-enumerator&quot;: &quot;~1.0&quot;,
+    &quot;sebastian/phpcpd&quot;: &quot;^2.0&quot;,
+    &quot;sebastian/recursion-context&quot;: &quot;^1.0|^2.0|^3.0&quot;
+    &quot;sebastian/resource-operations&quot;: &quot;~1.0&quot;,
+    &quot;sebastian/version&quot;: &quot;~1.0|~2.0&quot;,
+    &quot;seld/jsonlint&quot;: &quot;&gt;=1.0,&lt;2.0-dev&quot;
+    &quot;sensio/distribution-bundle&quot;: &quot;^5.0&quot;,
+    &quot;sensio/framework-extra-bundle&quot;: &quot;^3.0.2&quot;,
+    &quot;sensiolabs/security-checker&quot;: &quot;~3.0&quot;
+    &quot;sensiolabs/security-checker&quot;: &quot;~3.0|~4.0&quot;
+    &quot;silex/api&quot;: &quot;~2.1&quot;
+    &quot;silex/silex&quot;: &quot;^2.0&quot;,
+    &quot;slim/extras&quot;: &quot;*&quot;,
+    &quot;slim/middleware&quot;: &quot;*&quot;,
+    &quot;slim/php-view&quot;: &quot;2.*&quot;,
+    &quot;slim/slim&quot;: &quot;*&quot;,
+    &quot;slim/twig-view&quot;: &quot;2.*&quot;
+    &quot;spomky-labs/otphp&quot;: &quot;^8.2&quot;
+    &quot;squizlabs/php_codesniffer&quot;: &quot;2.*&quot;,
+    &quot;swiftmailer/swiftmailer&quot;: &quot;*&quot;
+    &quot;symfony/asset&quot;: &quot;~2.8|~3.0&quot;,
+    &quot;symfony/assetic-bundle&quot;: &quot;^2.8&quot;,
+    &quot;symfony/cache&quot;: &quot;~3.2.2|~3.3&quot;,
+    &quot;symfony/class-loader&quot;: &quot;~2.8|~3.0&quot;,
+    &quot;symfony/config&quot;: &quot;~3.2&quot;,
+    &quot;symfony/console&quot;: &quot;~2.7|~3.0&quot;,
+    &quot;symfony/debug&quot;: &quot;~2.8|~3.0&quot;,
+    &quot;symfony/dependency-injection&quot;: &quot;~3.2.1|~3.3&quot;,
+    &quot;symfony/doctrine-bridge&quot;: &quot;~2.7|~3.0&quot;,
+    &quot;symfony/dom-crawler&quot;: &quot;~2.8|~3.0&quot;
+    &quot;symfony/event-dispatcher&quot;: &quot;~2.8|~3.0&quot;,
+    &quot;symfony/expression-language&quot;: &quot;~2.7.0&quot;,
+    &quot;symfony/filesystem&quot;: &quot;~2.8|~3.0&quot;,
+    &quot;symfony/finder&quot;: &quot;^3.2&quot;,
+    &quot;symfony/framework-bundle&quot;: &quot;~2.7|~3.0&quot;,
+    &quot;symfony/http-foundation&quot;: &quot;~3.3&quot;,
+    &quot;symfony/http-kernel&quot;: &quot;^3.2.5&quot;,
+    &quot;symfony/inflector&quot;: &quot;~3.1&quot;
+    &quot;symfony/intl&quot;: &quot;~2.8|~3.0&quot;,
+    &quot;symfony/monolog-bridge&quot;: &quot;~2.7|~3.0&quot;,
+    &quot;symfony/monolog-bundle&quot;: &quot;^3.0.2&quot;,
+    &quot;symfony/options-resolver&quot;: &quot;~2.8|~3.0&quot;,
+    &quot;symfony/polyfill-apcu&quot;: &quot;^1.0&quot;,
+    &quot;symfony/polyfill-iconv&quot;: &quot;^1.2&quot;
+    &quot;symfony/polyfill-intl-icu&quot;: &quot;~1.0&quot;,
+    &quot;symfony/polyfill-mbstring&quot;: &quot;~1.1&quot;
+    &quot;symfony/polyfill-php56&quot;: &quot;^1.1&quot;,
+    &quot;symfony/polyfill-php70&quot;: &quot;~1.0&quot;,
+    &quot;symfony/polyfill-util&quot;: &quot;~1.0&quot;,
+    &quot;symfony/process&quot;: &quot;~2.7|~3.0&quot;,
+    &quot;symfony/property-access&quot;: &quot;~2.8|~3.0&quot;
+    &quot;symfony/routing&quot;: &quot;~3.1.10|^3.2.3&quot;,
+    &quot;symfony/security&quot;: &quot;~3.2&quot;,
+    &quot;symfony/security-acl&quot;: &quot;~2.7.0&quot;,
+    &quot;symfony/security-core&quot;: &quot;~3.2&quot;,
+    &quot;symfony/security-csrf&quot;: &quot;~2.8|~3.0&quot;,
+    &quot;symfony/security-http&quot;: &quot;~3.1&quot;
+    &quot;symfony/serializer&quot;: &quot;~2.7.0&quot;,
+    &quot;symfony/stopwatch&quot;: &quot;~2.8|~3.0&quot;,
+    &quot;symfony/swiftmailer-bundle&quot;: &quot;^2.3.10&quot;,
+    &quot;symfony/symfony&quot;: &quot;3.2.*&quot;,
+    &quot;symfony/templating&quot;: &quot;~2.8|~3.0&quot;,
+    &quot;symfony/translation&quot;: &quot;~2.8|~3.0&quot;,
+    &quot;symfony/twig-bundle&quot;: &quot;~2.3|~3.0&quot;,
+    &quot;symfony/validator&quot;: &quot;~2.7.0&quot;,
+    &quot;symfony/var-dumper&quot;: &quot;~3.2&quot;
+    &quot;symfony/yaml&quot;: &quot;~2.7|~3.0&quot;,
+    &quot;theseer/fdomdocument&quot;: &quot;~1.4&quot;
+    &quot;twbs/bootstrap&quot;: &quot;v3.3.6&quot;,
+    &quot;twig/extensions&quot;: &quot;^1.3&quot;,
+    &quot;twig/twig&quot;: &quot;^1.28.2|^2.0&quot;
+    &quot;twilio/sdk&quot;: &quot;^5.4&quot;,
+    &quot;twitter/bootstrap&quot;: &quot;v3.3.6&quot;,
+    &quot;tyrola/xmpphp&quot;: &quot;2.0&quot;
+    &quot;ui/**&quot;,
+    &quot;vlucas/valitron&quot;: &quot;^1.4&quot;,
+    &quot;webmozart/assert&quot;: &quot;~1.0&quot;
+    &quot;websharks/css-minifier&quot;: &quot;150820&quot;
+    &quot;white-october/pagerfanta-bundle&quot;: &quot;^1.0&quot;
+    &quot;willdurand/jsonp-callback-validator&quot;: &quot;1.1.0&quot;,
+    &quot;willdurand/negotiation&quot;: &quot;^2.0&quot;,
+    &quot;wingu/reflection&quot;: &quot;~1.0&quot;
+    &quot;wsdl2phpgenerator/wsdl2phpgenerator&quot;: &quot;^3.4&quot;,
+    &quot;wyrihaximus/html-compress&quot;: &quot;^1.1&quot;,
+    &quot;zendframework/zend-authentication&quot;: &quot;^2.5.3&quot;,
+    &quot;zendframework/zend-cache&quot;:&quot;~2.1&quot;,
+    &quot;zendframework/zend-code&quot;: &quot;^2.6.3 || ^3.0.4&quot;,
+    &quot;zendframework/zend-component-installer&quot;: &quot;^1.0 || ^0.5 || ^1.0.0-dev@dev&quot;,
+    &quot;zendframework/zend-config&quot;: &quot;~2.1&quot;,
+    &quot;zendframework/zend-config&quot;: &quot;^2.6&quot;,
+    &quot;zendframework/zend-console&quot;: &quot;^2.6&quot;
+    &quot;zendframework/zend-crypt&quot;: &quot;^2.6 || ^3.0&quot;,
+    &quot;zendframework/zend-db&quot;: &quot;^2.8.1&quot;,
+    &quot;zendframework/zend-debug&quot;: &quot;^2.5 || ^3.0&quot;,
+    &quot;zendframework/zend-escaper&quot;: &quot;^2.5&quot;,
+    &quot;zendframework/zend-eventmanager&quot;: &quot;^3.0&quot;,
+    &quot;zendframework/zend-filter&quot;: &quot;^2.7.1&quot;,
+    &quot;zendframework/zend-http&quot;: &quot;^2.5.4&quot;,
+    &quot;zendframework/zend-hydrator&quot;: &quot;^1.1 || ^2.2.1&quot;,
+    &quot;zendframework/zend-i18n&quot;: &quot;~2.1&quot;,
+    &quot;zendframework/zend-inputfilter&quot;: &quot;^2.7.3&quot;,
+    &quot;zendframework/zend-json&quot;: &quot;^2.6.1 || ^3.0&quot;,
+    &quot;zendframework/zend-loader&quot;: &quot;^2.5.1&quot;,
+    &quot;zendframework/zend-math&quot;: &quot;^3.0&quot;,
+    &quot;zendframework/zend-modulemanager&quot;: &quot;^2.7.2&quot;,
+    &quot;zendframework/zend-mvc&quot;: &quot;^2.7.10 || ^3.0.2&quot;,
+    &quot;zendframework/zend-paginator&quot;: &quot;^2.7&quot;,
+    &quot;zendframework/zend-permissions-acl&quot;: &quot;^2.6&quot;,
+    &quot;zendframework/zend-permissions-rbac&quot;: &quot;^2.5.1&quot;,
+    &quot;zendframework/zend-router&quot;: &quot;^3.0.1&quot;,
+    &quot;zendframework/zend-serializer&quot;: &quot;~2.1&quot;,
+    &quot;zendframework/zend-servicemanager&quot;: &quot;^2.7.6 || ^3.1.1&quot;,
+    &quot;zendframework/zend-stdlib&quot;: &quot;^3.0&quot;,
+    &quot;zendframework/zend-uri&quot;: &quot;^2.5.2&quot;,
+    &quot;zendframework/zend-validator&quot;: &quot;^2.8.1&quot;,
+    &quot;zendframework/zend-view&quot;: &quot;^2.8.1&quot;,
+    &quot;zetacomponents/base&quot;: &quot;*&quot;
+    &quot;zetacomponents/document&quot;: &quot;&gt;=1.3.1&quot;,
+    &quot;zfcampus/zf-apigility&quot;: &quot;^1.3&quot;,
+    &quot;zfcampus/zf-apigility-admin-ui&quot;: &quot;^1.3.7&quot;,
+    &quot;zfcampus/zf-apigility-documentation&quot;: &quot;^1.2.3&quot;,
+    &quot;zfcampus/zf-apigility-provider&quot;: &quot;^1.2&quot;,
+    &quot;zfcampus/zf-api-problem&quot;: &quot;^1.2.2&quot;,
+    &quot;zfcampus/zf-configuration&quot;: &quot;^1.2.1&quot;,
+    &quot;zfcampus/zf-console&quot;: &quot;^1.3&quot;
+    &quot;zfcampus/zf-content-negotiation&quot;: &quot;^1.2.2&quot;,
+    &quot;zfcampus/zf-content-validation&quot;: &quot;^1.3.4&quot;,
+    &quot;zfcampus/zf-development-mode&quot;: &quot;^3.0&quot;
+    &quot;zfcampus/zf-hal&quot;: &quot;^1.4.2&quot;,
+    &quot;zfcampus/zf-mvc-auth&quot;: &quot;^1.4.2&quot;,
+    &quot;zfcampus/zf-oauth2&quot;: &quot;^1.4&quot;,
+    &quot;zfcampus/zf-rest&quot;: &quot;^1.3.1&quot;,
+    &quot;zfcampus/zf-rpc&quot;: &quot;^1.3&quot;,
+    &quot;zfcampus/zf-versioning&quot;: &quot;^1.2&quot;
+</code></pre>
+</body>
+</html>
